@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.webviewdemo.WebViewDemoActivity">
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomlay"
+
+        >
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/bottomlay"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="1"
+        android:padding="3dp"
+        >
+        <Button
+            android:id="@+id/previous_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Previous"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:id="@+id/pdown_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Page Down"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:id="@+id/pup_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Page Up"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            />
+
+        <Button
+            android:id="@+id/refresh_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:textColor="#000000"
+            android:textSize="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.2"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
